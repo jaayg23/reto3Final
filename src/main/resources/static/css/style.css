@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+
+header{
+    width: 100vw;
+    height: 20px;
+    margin-top: 0;
+    list-style: none;
+    padding-left: 0;
+    background-color: #CD5C5C;
+    text-align: right;
+    font-size: 1.2rem;
+}
+
+main{
+    text-align: center;
+}
+
+.main-nav__item{
+    display: inline-block;
+    padding-right: 1.5rem;
+}
+
+.main-nav__item a{
+    color:white;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    text-decoration: none;
+}
+
+.main-nav__item a:hover{
+    color: #000080;
+}

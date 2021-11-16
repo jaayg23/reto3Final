@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+
+
+table {
+    width: 100%;
+    border: 0.1rem solid black;
+    justify-content: center;
+    align-items: center;
+}
+
+td{
+    font-size: 2rem;
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid #000;
+    border-spacing: 0;
+    border-collapse: collapse;
+    padding: 0.4rem;
+}
