@@ -35,17 +35,14 @@ public class Reservation implements Serializable{
     @Temporal(TemporalType.TIMESTAMP)
     private Date devolutionDate;
     
-    private String status;
+    
+    private String status = "created";
     
     @ManyToOne
     @JoinColumn(name = "description")
     @JsonIgnoreProperties("reservations")
     private Partyroom partyroom;
     
-    @ManyToOne
-    @JoinColumn(name = "messageText")
-    @JsonIgnoreProperties({"partyroom", "client"})
-    private Message messages;
     
     @ManyToOne
     @JoinColumn(name = "name")
