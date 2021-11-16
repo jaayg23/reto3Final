@@ -1,6 +1,6 @@
 function traerInformacionClientes(){
 	$.ajax({    
-    url : 'https://g73664e6c770cfe-partyroom.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/client/client',
+    url : 'http://150.136.174.195/Client/all',
 	data: "{}",
     type : 'GET',
     dataType : 'json',
@@ -39,7 +39,7 @@ function guardarInformacionClientes(){
 	};
 	let datosJson = JSON.stringify(misDatos); 
 	$.ajax(    
-    'https://g73664e6c770cfe-partyroom.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/client/client',
+    'http://150.136.174.195/Client/all',
 	{data: datosJson,
     type : 'POST',
     dataType : 'json',

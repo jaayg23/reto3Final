@@ -1,6 +1,6 @@
 function traerInformacionMensajes(){
 	$.ajax({    
-    url : 'https://g73664e6c770cfe-partyroom.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/message/message',
+    url : 'http://150.136.174.195/Message/all',
 	data: "{}",
     type : 'GET',
     dataType : 'json',
@@ -35,7 +35,7 @@ function guardarInformacionMensajes(){
 	};
 	let datosJson = JSON.stringify(misDatos); 
 	$.ajax(    
-    'https://g73664e6c770cfe-partyroom.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/message/message',
+    'http://150.136.174.195/Message/save',
 	{data: datosJson,
     type : 'POST',
     dataType : 'json',

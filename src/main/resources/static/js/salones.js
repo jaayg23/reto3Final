@@ -1,6 +1,6 @@
 function traerInformacionSalones(){
 	$.ajax({    
-    url : 'https://g73664e6c770cfe-partyroom.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/partyroom/partyroom',
+    url : 'http://150.136.174.195/Partyroom/all',
 	data: "{}",
     type : 'GET',
     dataType : 'json',
@@ -40,7 +40,7 @@ function guardarInformacionSalones(){
 	};
 	let datosJson = JSON.stringify(misDatos); 
 	$.ajax(    
-    'https://g73664e6c770cfe-partyroom.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/partyroom/partyroom',
+    'http://150.136.174.195/Partyroom/save',
 	{data: datosJson,
     type : 'POST',
     dataType : 'json',
